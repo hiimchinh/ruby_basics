@@ -1,7 +1,9 @@
+PASSWORD = 'SecreT'
+
 loop do
   puts '>> Please enter your password:'
-  password = gets.chomp
-  break if password == 'SecreT'
+  try_password = gets.chomp
+  break if try_password == PASSWORD
   puts '>> Invalid password!'
 end
 puts 'Welcome!'
